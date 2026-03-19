@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { FadeUp } from "@/components/animations/fade-up";
 import { about } from "@/data/profile";
 import { GraduationCap } from "lucide-react";
@@ -18,6 +19,20 @@ export function About() {
 
       <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
         <div className="lg:col-span-2 space-y-4">
+          {/* Profile image */}
+          <FadeUp>
+            <div className="relative w-full aspect-[3/2] sm:aspect-[2/1] rounded-2xl overflow-hidden mb-6 border border-border/50">
+              <Image
+                src="/images/israel-profile-1.webp"
+                alt="Israel Iyonsi"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 1024px) 100vw, 66vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0C0F1A]/40 via-transparent to-transparent" />
+            </div>
+          </FadeUp>
+
           {about.paragraphs.map((p, i) => (
             <FadeUp key={i} delay={i * 0.1}>
               <p className="text-muted-foreground leading-relaxed text-[15px]">{p}</p>

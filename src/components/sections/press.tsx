@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { FadeUp } from "@/components/animations/fade-up";
 import { pressFeatures } from "@/data/press";
-import { ExternalLink, Newspaper } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 export function Press() {
   return (
@@ -28,8 +29,16 @@ export function Press() {
               rel="noopener noreferrer"
               className="glass-card glass-card-hover p-6 flex flex-col h-full hover:-translate-y-1 transition-all duration-300 group"
             >
-              <div className="flex items-center gap-2 mb-4 pb-3 border-b border-border/50">
-                <Newspaper className="w-4 h-4 text-primary shrink-0" />
+              <div className="flex items-center gap-3 mb-4 pb-3 border-b border-border/50">
+                <div className="relative w-6 h-6 shrink-0 rounded overflow-hidden bg-white/10">
+                  <Image
+                    src={feature.logo}
+                    alt={feature.publication}
+                    fill
+                    className="object-contain p-0.5"
+                    sizes="24px"
+                  />
+                </div>
                 <span className="text-xs font-mono text-primary uppercase tracking-wider font-medium">
                   {feature.publication}
                 </span>

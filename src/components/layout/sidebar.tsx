@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Github,
   Linkedin,
@@ -52,8 +53,14 @@ export function Sidebar() {
     <aside className="hidden lg:flex fixed left-0 top-0 h-screen w-[280px] flex-col justify-between p-8 border-r border-border z-40 bg-background/80 backdrop-blur-sm">
       <div>
         <Link href="/" className="block mb-4">
-          <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center mb-3">
-            <span className="text-lg font-bold text-primary">II</span>
+          <div className="w-10 h-10 rounded-lg overflow-hidden border border-primary/30 mb-3">
+            <Image
+              src="/images/logo.webp"
+              alt="Israel Iyonsi Logo"
+              width={40}
+              height={40}
+              className="object-contain"
+            />
           </div>
           <h1 className="text-xl font-bold text-foreground">Israel Iyonsi</h1>
         </Link>
