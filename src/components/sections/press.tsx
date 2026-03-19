@@ -19,27 +19,27 @@ export function Press() {
         </p>
       </FadeUp>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {pressFeatures.map((feature, i) => (
           <FadeUp key={`${feature.publication}-${i}`} delay={i * 0.05}>
             <a
               href={feature.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="glass-card glass-card-hover p-5 flex flex-col h-full hover:-translate-y-1 transition-all duration-300 group"
+              className="glass-card glass-card-hover p-6 flex flex-col h-full hover:-translate-y-1 transition-all duration-300 group"
             >
-              <div className="flex items-center gap-2 mb-3">
+              <div className="flex items-center gap-2 mb-4 pb-3 border-b border-border/50">
                 <Newspaper className="w-4 h-4 text-primary shrink-0" />
-                <span className="text-xs font-mono text-primary uppercase tracking-wider">
+                <span className="text-xs font-mono text-primary uppercase tracking-wider font-medium">
                   {feature.publication}
                 </span>
               </div>
-              <p className="text-sm text-foreground leading-snug flex-1">
+              <p className="text-sm text-foreground leading-relaxed flex-1">
                 {feature.title}
               </p>
-              <div className="mt-3 flex items-center gap-1 text-xs text-muted-foreground group-hover:text-primary transition-colors">
+              <div className="mt-4 flex items-center gap-1.5 text-xs text-muted-foreground group-hover:text-primary transition-colors font-medium">
                 Read article
-                <ExternalLink className="w-3 h-3" />
+                <ExternalLink className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </div>
             </a>
           </FadeUp>

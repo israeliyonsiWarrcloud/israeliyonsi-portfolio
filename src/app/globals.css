@@ -199,25 +199,55 @@
   transform-origin: 0%;
 }
 
-/* Section heading */
+/* Section heading — dramatic scale for premium feel */
 .section-heading {
-  @apply text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground;
+  @apply text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground tracking-tight;
 }
 
-/* Section spacing */
+/* Section spacing — generous breathing room between sections */
 .section-padding {
-  @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
+  @apply px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-32;
 }
 
-/* Glass card hover state */
+/* Section divider — subtle gradient line between sections */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(212, 168, 67, 0.2) 20%,
+    rgba(212, 168, 67, 0.3) 50%,
+    rgba(212, 168, 67, 0.2) 80%,
+    transparent 100%
+  );
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.light .section-divider {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(184, 145, 46, 0.15) 20%,
+    rgba(184, 145, 46, 0.25) 50%,
+    rgba(184, 145, 46, 0.15) 80%,
+    transparent 100%
+  );
+}
+
+/* Glass card hover state — refined glow */
+.glass-card-hover {
+  transition: box-shadow 0.4s ease, border-color 0.4s ease, transform 0.3s ease;
+}
+
 .glass-card-hover:hover {
-  box-shadow: 0 0 20px rgba(212, 168, 67, 0.15), 0 0 60px rgba(212, 168, 67, 0.05);
-  border-color: rgba(212, 168, 67, 0.3);
+  box-shadow: 0 4px 24px rgba(212, 168, 67, 0.12), 0 0 48px rgba(212, 168, 67, 0.04);
+  border-color: rgba(212, 168, 67, 0.35);
 }
 
 .light .glass-card-hover:hover {
-  box-shadow: 0 0 20px rgba(184, 145, 46, 0.12), 0 0 60px rgba(184, 145, 46, 0.04);
-  border-color: rgba(184, 145, 46, 0.3);
+  box-shadow: 0 4px 24px rgba(184, 145, 46, 0.10), 0 0 48px rgba(184, 145, 46, 0.03);
+  border-color: rgba(184, 145, 46, 0.35);
 }
 
 /* Gold text gradient */

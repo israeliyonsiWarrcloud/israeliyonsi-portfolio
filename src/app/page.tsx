@@ -21,24 +21,31 @@ export default function Home() {
         <section id="hero">
           <Hero />
         </section>
+        <div className="section-divider" />
         <section id="about">
           <About />
         </section>
+        <div className="section-divider" />
         <section id="projects">
           <Projects />
         </section>
+        <div className="section-divider" />
         <section id="experience">
           <Experience />
         </section>
+        <div className="section-divider" />
         <section id="skills">
           <Skills />
         </section>
+        <div className="section-divider" />
         <section id="press">
           <Press />
         </section>
+        <div className="section-divider" />
         <section id="awards">
           <Awards />
         </section>
+        <div className="section-divider" />
         <section id="contact">
           <Contact />
         </section>

@@ -64,15 +64,15 @@ export function Sidebar() {
           AI & Cloud Innovator
         </p>
 
-        <nav className="flex flex-col gap-1">
+        <nav className="flex flex-col gap-0.5">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className={`text-sm py-2 px-3 rounded-md transition-colors ${
+              className={`text-sm py-2.5 px-3 rounded-md transition-all duration-200 relative ${
                 activeSection === item.href.slice(1)
-                  ? "text-primary bg-primary/10 font-medium"
-                  : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                  ? "text-primary bg-primary/10 font-medium before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-4 before:bg-primary before:rounded-full"
+                  : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
               }`}
             >
               {item.label}

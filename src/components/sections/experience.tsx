@@ -17,15 +17,15 @@ export function Experience() {
       </FadeUp>
 
       <div className="relative">
-        {/* Timeline line */}
-        <div className="absolute left-0 sm:left-4 top-0 bottom-0 w-px bg-border" />
+        {/* Timeline line — gradient fade */}
+        <div className="absolute left-0 sm:left-4 top-2 bottom-2 w-px bg-gradient-to-b from-primary/40 via-border to-border/30" />
 
-        <div className="space-y-8">
+        <div className="space-y-6">
           {experiences.map((exp, i) => (
             <FadeUp key={`${exp.company}-${exp.period}`} delay={i * 0.1}>
               <div className="relative pl-8 sm:pl-12">
-                {/* Timeline dot */}
-                <div className="absolute left-0 sm:left-4 top-1.5 -translate-x-1/2 w-3 h-3 rounded-full bg-primary border-2 border-background" />
+                {/* Timeline dot — pulsing gold */}
+                <div className="absolute left-0 sm:left-4 top-1.5 -translate-x-1/2 w-3 h-3 rounded-full bg-primary border-2 border-background shadow-[0_0_8px_rgba(212,168,67,0.4)]" />
 
                 <div className="glass-card p-5 sm:p-6">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-3">

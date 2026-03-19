@@ -20,12 +20,12 @@ export function About() {
         <div className="lg:col-span-2 space-y-4">
           {about.paragraphs.map((p, i) => (
             <FadeUp key={i} delay={i * 0.1}>
-              <p className="text-muted-foreground leading-relaxed">{p}</p>
+              <p className="text-muted-foreground leading-relaxed text-[15px]">{p}</p>
             </FadeUp>
           ))}
 
           <FadeUp delay={0.3}>
-            <blockquote className="mt-6 pl-4 border-l-2 border-primary italic text-foreground">
+            <blockquote className="mt-8 pl-5 border-l-2 border-primary italic text-foreground text-lg leading-relaxed">
               &ldquo;{about.philosophy}&rdquo;
             </blockquote>
           </FadeUp>

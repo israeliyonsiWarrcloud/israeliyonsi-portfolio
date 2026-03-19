@@ -37,16 +37,16 @@ export function Contact() {
         <h2 className="text-sm font-mono text-primary tracking-wider uppercase mb-2">
           Connect
         </h2>
-        <h3 className="section-heading mb-2">
+        <h3 className="section-heading mb-4">
           Let&apos;s Build Something Together
         </h3>
-        <p className="text-muted-foreground text-sm mb-8 max-w-lg">
+        <p className="text-muted-foreground text-base mb-10 max-w-lg leading-relaxed">
           I welcome collaborations, partnerships, and conversations around software engineering,
           AI, and the future of technology. Feel free to reach out.
         </p>
       </FadeUp>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         {contactLinks.map((link, i) => (
           <FadeUp key={link.label} delay={i * 0.1}>
             <a
@@ -77,8 +77,8 @@ export function Contact() {
       </FadeUp>
 
       <FadeUp delay={0.5}>
-        <div className="mt-16 pt-8 border-t border-border text-center">
-          <p className="text-xs text-muted-foreground">
+        <div className="mt-20 pt-10 border-t border-border/50 text-center">
+          <p className="text-xs text-muted-foreground/70 font-mono tracking-wider">
             &copy; {new Date().getFullYear()} Israel Iyonsi. All rights reserved.
           </p>
         </div>

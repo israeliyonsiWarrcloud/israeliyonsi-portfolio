@@ -33,24 +33,26 @@ export function Skills() {
         </h3>
       </FadeUp>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {skillCategories.map((category, i) => {
           const Icon = iconMap[category.icon] || Server;
           return (
             <FadeUp key={category.name} delay={i * 0.08}>
-              <div className="glass-card glass-card-hover p-5 h-full hover:-translate-y-1 transition-all duration-300">
-                <div className="flex items-center gap-2 mb-3">
-                  <Icon className="w-5 h-5 text-primary" />
-                  <h4 className="font-semibold text-foreground text-sm">
+              <div className="glass-card glass-card-hover p-6 h-full hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                <div className="flex items-center gap-3 mb-4 pb-3 border-b border-border/50">
+                  <div className="p-2 rounded-lg bg-primary/10">
+                    <Icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <h4 className="font-semibold text-foreground">
                     {category.name}
                   </h4>
                 </div>
-                <div className="flex flex-wrap gap-1.5">
+                <div className="flex flex-wrap gap-2 flex-1">
                   {category.skills.map((skill) => (
                     <Badge
                       key={skill}
                       variant="secondary"
-                      className="text-[10px] font-mono"
+                      className="text-xs font-mono"
                     >
                       {skill}
                     </Badge>

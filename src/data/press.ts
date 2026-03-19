@@ -4,7 +4,7 @@ export const pressFeatures: PressFeature[] = [
   {
     publication: "Business Insider Africa",
     title: "Building smarter systems, Israel Iyonsi advances AI integration across industries",
-    url: "https://africa.businessinsider.com/local/leaders/building-smarter-systems-israel-iyonsi-advances-ai-integration-across-industries/kswpc5t",
+    url: "https://africa.businessinsider.com/local/leaders/building-smarter-systems-israel-iyonsi-advances-ai-integration-across-industries/khzm1r1",
     logo: "/images/press/business-insider.svg",
   },
   {
