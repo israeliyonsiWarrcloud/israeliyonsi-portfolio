@@ -37,7 +37,7 @@ export function Contact() {
         <h2 className="text-sm font-mono text-primary tracking-wider uppercase mb-2">
           Connect
         </h2>
-        <h3 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">
+        <h3 className="section-heading mb-2">
           Let&apos;s Build Something Together
         </h3>
         <p className="text-muted-foreground text-sm mb-8 max-w-lg">
@@ -53,7 +53,7 @@ export function Contact() {
               href={link.href}
               target={link.label !== "Email" ? "_blank" : undefined}
               rel={link.label !== "Email" ? "noopener noreferrer" : undefined}
-              className="glass-card p-5 flex items-center gap-4 hover:-translate-y-1 hover:gold-glow transition-all duration-300 group"
+              className="glass-card glass-card-hover p-5 flex items-center gap-4 hover:-translate-y-1 transition-all duration-300 group"
             >
               <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
                 <link.icon className="w-5 h-5 text-primary" />

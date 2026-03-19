@@ -11,7 +11,7 @@ export function Experience() {
         <h2 className="text-sm font-mono text-primary tracking-wider uppercase mb-2">
           Career
         </h2>
-        <h3 className="text-3xl sm:text-4xl font-bold text-foreground mb-8">
+        <h3 className="section-heading mb-8">
           Experience
         </h3>
       </FadeUp>

@@ -11,7 +11,7 @@ export function Press() {
         <h2 className="text-sm font-mono text-primary tracking-wider uppercase mb-2">
           Media
         </h2>
-        <h3 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">
+        <h3 className="section-heading mb-2">
           As Seen In
         </h3>
         <p className="text-muted-foreground text-sm mb-8">
@@ -26,7 +26,7 @@ export function Press() {
               href={feature.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="glass-card p-5 flex flex-col h-full hover:-translate-y-1 hover:gold-glow transition-all duration-300 group"
+              className="glass-card glass-card-hover p-5 flex flex-col h-full hover:-translate-y-1 transition-all duration-300 group"
             >
               <div className="flex items-center gap-2 mb-3">
                 <Newspaper className="w-4 h-4 text-primary shrink-0" />

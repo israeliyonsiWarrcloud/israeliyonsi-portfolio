@@ -11,7 +11,7 @@ export function About() {
         <h2 className="text-sm font-mono text-primary tracking-wider uppercase mb-2">
           About Me
         </h2>
-        <h3 className="text-3xl sm:text-4xl font-bold text-foreground mb-8">
+        <h3 className="section-heading mb-8">
           Who I Am
         </h3>
       </FadeUp>

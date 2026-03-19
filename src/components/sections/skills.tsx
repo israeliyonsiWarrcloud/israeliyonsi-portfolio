@@ -28,7 +28,7 @@ export function Skills() {
         <h2 className="text-sm font-mono text-primary tracking-wider uppercase mb-2">
           Expertise
         </h2>
-        <h3 className="text-3xl sm:text-4xl font-bold text-foreground mb-8">
+        <h3 className="section-heading mb-8">
           Technical Skills
         </h3>
       </FadeUp>
@@ -38,7 +38,7 @@ export function Skills() {
           const Icon = iconMap[category.icon] || Server;
           return (
             <FadeUp key={category.name} delay={i * 0.08}>
-              <div className="glass-card p-5 h-full hover:-translate-y-1 hover:gold-glow transition-all duration-300">
+              <div className="glass-card glass-card-hover p-5 h-full hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
                   <Icon className="w-5 h-5 text-primary" />
                   <h4 className="font-semibold text-foreground text-sm">

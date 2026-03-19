@@ -16,6 +16,7 @@ const navItems = [
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Press", href: "#press" },
+  { label: "Awards", href: "#awards" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -50,7 +51,10 @@ export function Sidebar() {
   return (
     <aside className="hidden lg:flex fixed left-0 top-0 h-screen w-[280px] flex-col justify-between p-8 border-r border-border z-40 bg-background/80 backdrop-blur-sm">
       <div>
-        <Link href="/" className="block mb-2">
+        <Link href="/" className="block mb-4">
+          <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center mb-3">
+            <span className="text-lg font-bold text-primary">II</span>
+          </div>
           <h1 className="text-xl font-bold text-foreground">Israel Iyonsi</h1>
         </Link>
         <p className="text-sm text-primary font-medium mb-1">
@@ -77,7 +81,7 @@ export function Sidebar() {
         </nav>
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-4 pt-4 border-t border-border">
         <div className="flex items-center gap-3">
           {socials.map((social) => (
             <a
@@ -93,6 +97,9 @@ export function Sidebar() {
           ))}
         </div>
         <ThemeToggle />
+        <p className="text-[10px] text-muted-foreground/50 font-mono">
+          &copy; {new Date().getFullYear()} Israel Iyonsi
+        </p>
       </div>
     </aside>
   );

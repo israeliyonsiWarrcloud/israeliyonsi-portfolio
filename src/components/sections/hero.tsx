@@ -41,14 +41,15 @@ export function Hero() {
 
           <motion.h1
             variants={itemVariants}
-            className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-foreground"
+            className="text-5xl sm:text-6xl lg:text-8xl font-bold tracking-tight text-foreground"
           >
-            Israel Iyonsi
+            Israel<br />
+            <span className="gold-text">Iyonsi</span>
           </motion.h1>
 
           <motion.p
             variants={itemVariants}
-            className="text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-2xl leading-relaxed"
+            className="text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-2xl leading-relaxed font-light"
           >
             {profile.headline}
           </motion.p>
@@ -62,7 +63,7 @@ export function Hero() {
                 key={metric.label}
                 className="glass-card px-5 py-3 sm:px-6 sm:py-4"
               >
-                <div className="text-2xl sm:text-3xl font-bold text-success">
+                <div className="text-2xl sm:text-3xl font-bold metric-value">
                   {metric.value}
                 </div>
                 <div className="text-xs sm:text-sm text-muted-foreground mt-1">
@@ -78,13 +79,13 @@ export function Hero() {
           >
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition-all shadow-[0_0_20px_rgba(212,168,67,0.25)] hover:shadow-[0_0_30px_rgba(212,168,67,0.4)]"
             >
               View My Work
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-lg text-foreground hover:bg-muted transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-3.5 border border-border rounded-lg text-foreground font-medium hover:border-primary/50 hover:text-primary transition-all"
             >
               Get in Touch
             </a>

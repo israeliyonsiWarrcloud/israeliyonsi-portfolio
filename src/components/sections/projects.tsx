@@ -12,7 +12,7 @@ export function Projects() {
         <h2 className="text-sm font-mono text-primary tracking-wider uppercase mb-2">
           Featured Work
         </h2>
-        <h3 className="text-3xl sm:text-4xl font-bold text-foreground mb-8">
+        <h3 className="section-heading mb-8">
           Projects & Case Studies
         </h3>
       </FadeUp>
@@ -20,7 +20,7 @@ export function Projects() {
       <div className="space-y-6">
         {projects.map((project, i) => (
           <FadeUp key={project.title} delay={i * 0.1}>
-            <div className="glass-card p-6 sm:p-8 hover:gold-glow transition-shadow duration-300 group">
+            <div className="glass-card glass-card-hover p-6 sm:p-8 transition-all duration-300 group">
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
                 <div>
                   <p className="text-xs text-primary font-mono uppercase tracking-wider">
@@ -45,7 +45,7 @@ export function Projects() {
               <div className="flex flex-wrap gap-3 mb-4">
                 {project.metrics.map((metric) => (
                   <div key={metric.label} className="text-center">
-                    <div className="text-lg font-bold text-success">
+                    <div className="text-lg font-bold metric-value">
                       {metric.value}
                     </div>
                     <div className="text-[10px] text-muted-foreground uppercase tracking-wider">
