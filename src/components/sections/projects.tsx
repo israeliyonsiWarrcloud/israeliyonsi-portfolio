@@ -42,9 +42,9 @@ export function Projects() {
                 {project.approach}
               </p>
 
-              <div className="flex flex-wrap gap-4 sm:gap-6 mb-5 py-4 px-4 -mx-4 border-y border-border/50 bg-background/30 rounded-lg">
+              <div className="flex flex-wrap gap-4 sm:gap-8 mb-5 py-4 border-y border-border/50">
                 {project.metrics.map((metric) => (
-                  <div key={metric.label} className="text-center">
+                  <div key={metric.label}>
                     <div className="text-xl sm:text-2xl font-bold metric-value">
                       {metric.value}
                     </div>

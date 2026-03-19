@@ -17,8 +17,8 @@ export function Awards() {
         </h3>
       </FadeUp>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_200px] gap-6 items-start">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_220px] gap-5 items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {awards.map((award, i) => (
             <FadeUp key={award.title} delay={i * 0.1}>
               <div className="glass-card glass-card-hover p-6 sm:p-8 border border-primary/20 transition-all duration-300 relative overflow-hidden group">
@@ -48,13 +48,13 @@ export function Awards() {
 
         {/* Profile image accent */}
         <FadeUp delay={0.2}>
-          <div className="hidden lg:block relative rounded-2xl overflow-hidden border border-border/50 aspect-[3/4]">
+          <div className="hidden lg:block relative rounded-2xl overflow-hidden border border-border/50 aspect-[3/4] sticky top-8">
             <Image
               src="/images/israel-profile-2.webp"
               alt="Israel Iyonsi"
               fill
               className="object-cover object-top"
-              sizes="200px"
+              sizes="220px"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0C0F1A]/50 via-transparent to-transparent" />
           </div>

@@ -74,7 +74,7 @@ export function Hero() {
               variants={prefersReducedMotion ? {} : containerVariants}
               initial="hidden"
               animate="visible"
-              className="space-y-6"
+              className="space-y-5 sm:space-y-6"
             >
               <motion.p
                 variants={itemVariants}
@@ -85,7 +85,7 @@ export function Hero() {
 
               <motion.h1
                 variants={itemVariants}
-                className="text-5xl sm:text-6xl lg:text-8xl font-bold tracking-tighter text-foreground leading-[0.9]"
+                className="text-[3.25rem] sm:text-6xl lg:text-8xl font-bold tracking-tighter text-foreground leading-[0.9]"
               >
                 Israel<br />
                 <span className="gold-text">Iyonsi</span>
@@ -100,17 +100,17 @@ export function Hero() {
 
               <motion.div
                 variants={itemVariants}
-                className="flex flex-wrap gap-4 sm:gap-5 pt-4"
+                className="grid grid-cols-3 gap-3 sm:gap-4 pt-4 max-w-md"
               >
                 {profile.metrics.map((metric) => (
                   <div
                     key={metric.label}
-                    className="glass-card px-5 py-3 sm:px-6 sm:py-4 border-primary/10"
+                    className="glass-card px-4 py-3 sm:px-5 sm:py-4 border-primary/10"
                   >
-                    <div className="text-xl sm:text-2xl font-bold metric-value tracking-tight">
+                    <div className="text-base sm:text-2xl font-bold metric-value tracking-tight">
                       {metric.value}
                     </div>
-                    <div className="text-[10px] sm:text-xs text-muted-foreground mt-1 uppercase tracking-wider">
+                    <div className="text-[9px] sm:text-xs text-muted-foreground mt-1 uppercase tracking-wider leading-tight">
                       {metric.label}
                     </div>
                   </div>
@@ -119,17 +119,17 @@ export function Hero() {
 
               <motion.div
                 variants={itemVariants}
-                className="flex gap-4 pt-4"
+                className="flex gap-3 sm:gap-4 pt-4"
               >
                 <a
                   href="#projects"
-                  className="inline-flex items-center gap-2 px-8 py-3.5 bg-primary text-primary-foreground rounded-xl font-semibold hover:opacity-90 transition-all duration-300 shadow-[0_0_20px_rgba(212,168,67,0.25)] hover:shadow-[0_0_40px_rgba(212,168,67,0.4)] hover:-translate-y-0.5"
+                  className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 bg-primary text-primary-foreground rounded-xl font-semibold text-sm sm:text-base hover:opacity-90 transition-all duration-300 shadow-[0_0_20px_rgba(212,168,67,0.25)] hover:shadow-[0_0_40px_rgba(212,168,67,0.4)] hover:-translate-y-0.5 whitespace-nowrap"
                 >
                   View My Work
                 </a>
                 <a
                   href="#contact"
-                  className="inline-flex items-center gap-2 px-8 py-3.5 border border-border/80 rounded-xl text-foreground font-medium hover:border-primary/50 hover:text-primary transition-all duration-300 hover:-translate-y-0.5"
+                  className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 border border-border/80 rounded-xl text-foreground font-medium text-sm sm:text-base hover:border-primary/50 hover:text-primary transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap"
                 >
                   Get in Touch
                 </a>

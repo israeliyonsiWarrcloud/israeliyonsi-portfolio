@@ -37,10 +37,10 @@ export function Contact() {
         <h2 className="text-sm font-mono text-primary tracking-wider uppercase mb-2">
           Connect
         </h2>
-        <h3 className="section-heading mb-4">
+        <h3 className="section-heading mb-3">
           Let&apos;s Build Something Together
         </h3>
-        <p className="text-muted-foreground text-base mb-10 max-w-lg leading-relaxed">
+        <p className="text-muted-foreground text-base mb-10 max-w-xl leading-relaxed">
           I welcome collaborations, partnerships, and conversations around software engineering,
           AI, and the future of technology. Feel free to reach out.
         </p>
@@ -77,7 +77,7 @@ export function Contact() {
       </FadeUp>
 
       <FadeUp delay={0.5}>
-        <div className="mt-20 pt-10 border-t border-border/50 text-center">
+        <div className="mt-16 pt-8 border-t border-border/50 text-center">
           <p className="text-xs text-muted-foreground/70 font-mono tracking-wider">
             &copy; {new Date().getFullYear()} Israel Iyonsi. All rights reserved.
           </p>

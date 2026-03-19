@@ -61,7 +61,7 @@ export function Experience() {
                       <Badge
                         key={tech}
                         variant="secondary"
-                        className="text-[10px] font-mono"
+                        className="text-xs font-mono"
                       >
                         {tech}
                       </Badge>

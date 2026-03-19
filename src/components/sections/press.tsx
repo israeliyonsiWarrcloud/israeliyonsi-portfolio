@@ -12,10 +12,10 @@ export function Press() {
         <h2 className="text-sm font-mono text-primary tracking-wider uppercase mb-2">
           Media
         </h2>
-        <h3 className="section-heading mb-2">
+        <h3 className="section-heading mb-3">
           As Seen In
         </h3>
-        <p className="text-muted-foreground text-sm mb-8">
+        <p className="text-muted-foreground text-sm mb-10">
           Featured in leading publications for contributions to software engineering, AI, and fintech.
         </p>
       </FadeUp>

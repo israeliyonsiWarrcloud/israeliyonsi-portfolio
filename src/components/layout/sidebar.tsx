@@ -88,7 +88,7 @@ export function Sidebar() {
         </nav>
       </div>
 
-      <div className="space-y-4 pt-4 border-t border-border">
+      <div className="space-y-4 pt-4 border-t border-border pb-2">
         <div className="flex items-center gap-3">
           {socials.map((social) => (
             <a

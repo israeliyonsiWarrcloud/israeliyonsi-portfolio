@@ -35,7 +35,7 @@ export function About() {
 
           {about.paragraphs.map((p, i) => (
             <FadeUp key={i} delay={i * 0.1}>
-              <p className="text-muted-foreground leading-relaxed text-[15px]">{p}</p>
+              <p className="text-muted-foreground leading-relaxed text-base">{p}</p>
             </FadeUp>
           ))}
 
@@ -46,7 +46,7 @@ export function About() {
           </FadeUp>
         </div>
 
-        <div>
+        <div className="lg:sticky lg:top-8">
           <FadeUp delay={0.2}>
             <div className="glass-card p-6 space-y-4">
               <div className="flex items-center gap-2 text-primary mb-2">
