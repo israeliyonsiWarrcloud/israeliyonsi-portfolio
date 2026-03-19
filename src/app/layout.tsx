@@ -81,7 +81,7 @@ export default function RootLayout({
                 "100 Iconic Personalities Award 2024",
               ],
               sameAs: [
-                "https://linkedin.com/in/iyonsiisrael-123b72b0",
+                "https://linkedin.com/in/iyonsi-israel-123b72b0",
                 "https://github.com/IsraelIyonsi",
                 "https://instagram.com/iyonsi_israel",
               ],

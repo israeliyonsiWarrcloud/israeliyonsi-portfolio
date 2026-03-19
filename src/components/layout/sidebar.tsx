@@ -22,7 +22,7 @@ const navItems = [
 
 const socials = [
   { icon: Github, href: "https://github.com/IsraelIyonsi", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com/in/iyonsiisrael-123b72b0", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://linkedin.com/in/iyonsi-israel-123b72b0", label: "LinkedIn" },
   { icon: Instagram, href: "https://instagram.com/iyonsi_israel", label: "Instagram" },
   { icon: Mail, href: "mailto:iyonsiisrael@gmail.com", label: "Email" },
 ];

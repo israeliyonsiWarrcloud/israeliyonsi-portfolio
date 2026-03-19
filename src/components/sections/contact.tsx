@@ -14,7 +14,7 @@ const contactLinks = [
     icon: Linkedin,
     label: "LinkedIn",
     value: "iyonsiisrael",
-    href: "https://linkedin.com/in/iyonsiisrael-123b72b0",
+    href: "https://linkedin.com/in/iyonsi-israel-123b72b0",
   },
   {
     icon: Github,

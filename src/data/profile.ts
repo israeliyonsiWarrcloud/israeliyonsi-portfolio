@@ -8,7 +8,7 @@ export const profile = {
   website: "israeliyonsi.com",
   resumeUrl: "/resume-israel-iyonsi.pdf",
   socials: [
-    { name: "LinkedIn", url: "https://linkedin.com/in/iyonsiisrael-123b72b0", icon: "Linkedin" },
+    { name: "LinkedIn", url: "https://linkedin.com/in/iyonsi-israel-123b72b0", icon: "Linkedin" },
     { name: "GitHub", url: "https://github.com/IsraelIyonsi", icon: "Github" },
     { name: "Instagram", url: "https://instagram.com/iyonsi_israel", icon: "Instagram" },
     { name: "Email", url: "mailto:iyonsiisrael@gmail.com", icon: "Mail" },
