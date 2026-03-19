@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { FadeUp } from "@/components/animations/fade-up";
 import { awards } from "@/data/awards";
 import { Trophy } from "lucide-react";
@@ -16,32 +17,48 @@ export function Awards() {
         </h3>
       </FadeUp>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {awards.map((award, i) => (
-          <FadeUp key={award.title} delay={i * 0.1}>
-            <div className="glass-card glass-card-hover p-6 sm:p-8 border border-primary/20 transition-all duration-300 relative overflow-hidden group">
-              {/* Subtle gold gradient accent in corner */}
-              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-primary/10 to-transparent rounded-bl-full opacity-60 group-hover:opacity-100 transition-opacity" />
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_200px] gap-6 items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {awards.map((award, i) => (
+            <FadeUp key={award.title} delay={i * 0.1}>
+              <div className="glass-card glass-card-hover p-6 sm:p-8 border border-primary/20 transition-all duration-300 relative overflow-hidden group">
+                {/* Subtle gold gradient accent in corner */}
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-primary/10 to-transparent rounded-bl-full opacity-60 group-hover:opacity-100 transition-opacity" />
 
-              <div className="flex items-start gap-4 mb-5 relative">
-                <div className="p-3 rounded-xl bg-primary/10 border border-primary/20 shrink-0">
-                  <Trophy className="w-7 h-7 text-primary" />
+                <div className="flex items-start gap-4 mb-5 relative">
+                  <div className="p-3 rounded-xl bg-primary/10 border border-primary/20 shrink-0">
+                    <Trophy className="w-7 h-7 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-foreground leading-tight">
+                      {award.title}
+                    </h4>
+                    <p className="text-xs text-primary font-mono mt-1">
+                      {award.organization} &bull; {award.year}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-xl font-bold text-foreground leading-tight">
-                    {award.title}
-                  </h4>
-                  <p className="text-xs text-primary font-mono mt-1">
-                    {award.organization} &bull; {award.year}
-                  </p>
-                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed relative">
+                  {award.description}
+                </p>
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed relative">
-                {award.description}
-              </p>
-            </div>
-          </FadeUp>
-        ))}
+            </FadeUp>
+          ))}
+        </div>
+
+        {/* Profile image accent */}
+        <FadeUp delay={0.2}>
+          <div className="hidden lg:block relative rounded-2xl overflow-hidden border border-border/50 aspect-[3/4]">
+            <Image
+              src="/images/israel-profile-2.webp"
+              alt="Israel Iyonsi"
+              fill
+              className="object-cover object-top"
+              sizes="200px"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0C0F1A]/50 via-transparent to-transparent" />
+          </div>
+        </FadeUp>
       </div>
     </div>
   );

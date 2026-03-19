@@ -23,7 +23,7 @@ export function About() {
           <FadeUp>
             <div className="relative w-full aspect-[3/2] sm:aspect-[2/1] rounded-2xl overflow-hidden mb-6 border border-border/50">
               <Image
-                src="/images/israel-profile-1.webp"
+                src="/images/israel-profile-3.webp"
                 alt="Israel Iyonsi"
                 fill
                 className="object-cover object-top"
